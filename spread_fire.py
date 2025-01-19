@@ -4,6 +4,7 @@ def spread_fire(grid):
     """Update the forest grid based on fire spreading rules."""
     update_grid = copy.deepcopy(grid)
     neighbors=[]
+    grid_size = len(grid)
     for i in range(grid_size):
         for j in range(grid_size):
             if grid[i][j] == 1:
